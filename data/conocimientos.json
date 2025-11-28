@@ -1,0 +1,37 @@
+[
+  {
+    "categoria": "Frontend",
+    "items": [
+      { "nombre": "HTML", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
+      { "nombre": "CSS", "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Official_CSS_Logo.svg/1200px-Official_CSS_Logo.svg.png" },
+      { "nombre": "JavaScript", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+      { "nombre": "React", "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/1200px-React.svg.png" },
+      { "nombre": "Angular", "logo": "https://brandlogos.net/wp-content/uploads/2025/04/angular_icon-logo_brandlogos.net_jn7wi-512x542.png" },
+      { "nombre": "Svelte", "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Svelte_Logo.svg/1200px-Svelte_Logo.svg.png" },
+      { "nombre": "TypeScript", "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png" }
+    ]
+  },
+  {
+    "categoria": "Backend",
+    "items": [
+      { "nombre": "Java", "logo": "https://images.vexels.com/media/users/3/166401/isolated/preview/b82aa7ac3f736dd78570dd3fa3fa9e24-icono-del-lenguaje-de-programacion-java.png" },
+      { "nombre": "Spring Boot", "logo": "https://dominickm.com/wp-content/uploads/2016/06/spring-boot-logo_full.png" },
+      { "nombre": "PHP", "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/2560px-PHP-logo.svg.png" },
+      { "nombre": "Node.js", "logo": "https://cp.beget.com/shared/6ayu2lMsV1DpkfCrePd2HEMWvsKDBY-c/logo_nodejs2x.png.webp" },
+      { "nombre": "Kotlin", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" },
+      { "nombre": "MySQL", "logo": "https://www.ovhcloud.com/sites/default/files/styles/large_screens_1x/public/2021-09/ECX-1909_Hero_MySQL_600x400%402x-1_0.png" },
+      { "nombre": "Firebase (Firestore y Auth)", "logo": "https://vectorseek.com/wp-content/uploads/2025/05/Firebase-icon-Logo-PNG-SVG-Vector.png" }
+    ]
+  },
+  {
+    "categoria": "Herramientas",
+    "items": [
+      { "nombre": "Git", "logo": "https://cdn.iconscout.com/icon/free/png-256/free-git-logo-icon-download-in-svg-png-gif-file-formats--programming-langugae-language-pack-logos-icons-1175219.png?f=webp&w=256" },
+      { "nombre": "GitHub", "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/1200px-GitHub_Invertocat_Logo.svg.png" },
+      { "nombre": "Android Studio", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" },
+      { "nombre": "Jetpack Compose", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" },
+      { "nombre": "Zoho CRM", "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/ZOHO.svg/2560px-ZOHO.svg.png" },
+      { "nombre": "Odoo CRM", "logo": "https://cdn.worldvectorlogo.com/logos/odoo.svg" }
+    ]
+  }
+]
