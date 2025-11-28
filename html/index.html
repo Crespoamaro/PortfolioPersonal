@@ -1,17 +1,24 @@
 <!doctype html>
-<!doctype html>
 <html lang="es">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Portfolio Profesional - David Crespo Amaro</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Portfolio profesional de David Crespo Amaro: proyectos, tecnologías, desarrollo web, móvil y ciberseguridad." />
+
+  <!-- CSS -->
   <link rel="stylesheet" href="/PortfolioPersonal/css/styles.css" />
-  <meta name="description" content="Portfolio profesional de David Crespo Amaro: proyectos, TFG y tecnologías dominadas en desarrollo web, móvil y ciberseguridad." />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/PortfolioPersonal/img/favicon.jpg">
 </head>
+
 <body>
+  <!-- HEADER -->
   <header class="site-header">
-    <div class="container header-inner">
-      <h1 class="brand">David Crespo Amaro</h1>
+    <div class="container header-inner" style="justify-content: center;">
       <nav class="nav">
         <a href="#sobre-mi">Sobre mí</a>
         <a href="#conocimientos">Conocimientos</a>
@@ -21,14 +28,30 @@
     </div>
   </header>
 
+  <!-- PERFIL -->
+  <section id="perfil" class="container section">
+    <div class="perfil-card">
+      <img src="/PortfolioPersonal/img/ImgPerfil.jpg" alt="Foto de David Crespo Amaro" class="perfil-img" />
+      <div class="perfil-info">
+        <h2>David Crespo Amaro</h2>
+        <p><strong>Email:</strong> <a href="mailto:david.crespo.amaro@gmail.com">david.crespo.amaro@gmail.com</a></p>
+        <p><strong>Ubicación:</strong> Madrid, España</p>
+        <div class="perfil-buttons">
+          <a class="btn" href="https://www.linkedin.com/in/david-crespo-amaro/" target="_blank" rel="noopener" style="color:white;">LinkedIn</a>
+          <a class="btn btn-outline" href="#contacto">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <main>
+    <!-- SOBRE MI -->
     <section id="sobre-mi" class="hero container">
       <div class="hero-content">
-        <h2>Desarrollador Full Stack & Especialista en Ciberseguridad</h2>
-        <p>Soy graduado como Técnico Superior en Desarrollo de Aplicaciones Multiplataforma y actualmente curso un Grado en Ingeniería Informática, con especialización en Ciberseguridad y Hacking Ético.</p>
-        <p>Tengo experiencia sólida en desarrollo de aplicaciones web y multiplataforma, con dominio de tecnologías modernas como JavaScript, React, Node.js, Kotlin y Firebase. Mi pasión por la informática y el aprendizaje continuo me permite adaptarme rápidamente a nuevos entornos y herramientas.</p>
-        <p>He adquirido habilidades en gestión de equipos y metodologías ágiles, motivando y coordinando grupos para alcanzar objetivos de manera eficiente. Comprometido con el éxito de cada proyecto, busco siempre soluciones innovadoras y efectivas.</p>
-        <p class="meta">Tecnologías favoritas: JavaScript, React, Node.js, Kotlin, Firebase</p>
+        <h2>Desarrollador Full Stack</h2>
+        <p>Soy Técnico Superior en Desarrollo de Aplicaciones Multiplataforma y actualmente curso un Grado en Ingeniería Informática con especialización en Ciberseguridad y Hacking Ético.</p>
+        <p>Mi pasión por la informática y el aprendizaje continuo me permiten adaptarme rápidamente a nuevos entornos y herramientas.</p>
+        <p>Además, cuento con habilidades en trabajo en equipo, liderazgo y metodologías ágiles, aportando eficiencia y compromiso en cada proyecto.</p>
       </div>
       <div class="hero-cta">
         <a class="btn" href="#proyectos">Ver proyectos</a>
@@ -36,18 +59,21 @@
       </div>
     </section>
 
+    <!-- CONOCIMIENTOS -->
     <section id="conocimientos" class="container section">
       <h2>Conocimientos</h2>
       <p class="muted">Tecnologías y herramientas que domino.</p>
       <div id="skills" class="skills-grid" aria-live="polite"></div>
     </section>
 
+    <!-- PROYECTOS -->
     <section id="proyectos" class="container section">
       <h2>Proyectos</h2>
-      <p class="muted">Algunos de mis proyectos destacados, incluyendo el Trabajo de Fin de Grado (TFG).</p>
+      <p class="muted">Algunos de mis proyectos destacados.</p>
       <div id="projects" class="projects-grid" aria-live="polite"></div>
     </section>
 
+    <!-- CONTACTO -->
     <section id="contacto" class="container section">
       <h2>Contacto</h2>
       <p class="muted">¿Quieres hablar sobre un proyecto o una oportunidad laboral? Escríbeme:</p>
@@ -73,25 +99,17 @@
     </section>
   </main>
 
+  <!-- FOOTER -->
   <footer class="site-footer">
-  <div class="container">
-    <small>© <span id="year"></span> David Crespo Amaro — Portfolio Profesional</small>
-    <div class="footer-links">
-      <a href="https://github.com/Crespoamaro" target="_blank" rel="noopener">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" width="20" style="vertical-align: middle; margin-right: 5px;">
-        GitHub
-      </a>
-      <a href="https://www.linkedin.com/in/david-crespo-amaro/" target="_blank" rel="noopener">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" width="20" style="vertical-align: middle; margin-right: 5px;">
-        LinkedIn
-      </a>
+    <div class="container">
+      <small>© <span id="year"></span> David Crespo Amaro — Portfolio</small>
     </div>
-</div>
-    </footer>
+  </footer>
 
+  <!-- BOTÓN VOLVER ARRIBA -->
+  <button id="top-button" aria-label="Volver arriba">↑</button>
+
+  <!-- JS -->
   <script type="module" src="/PortfolioPersonal/js/index.js"></script>
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
 </body>
-</html> 
+</html>

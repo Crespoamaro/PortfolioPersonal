@@ -1,5 +1,3 @@
-// Módulo para cargar y mostrar conocimientos desde el JSON local.
-// Devuelve una promesa que resuelve con el array de categorías.
 export async function fetchConocimientos() {
   try {
     const res = await fetch('/PortfolioPersonal/data/conocimientos.json', { cache: 'no-store' });
