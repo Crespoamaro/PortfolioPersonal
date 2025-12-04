@@ -8,7 +8,6 @@
   --radius: 14px;
   --max-width: 1100px;
   --container-padding: 1.5rem;
-
   font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial;
 }
 
@@ -16,52 +15,44 @@
   box-sizing: border-box;
 }
 
-html, body {
-  height: 100%;
-}
-
 body {
   margin: 0;
-  background: linear-gradient(180deg, #071428 0%, #041022 100%);
+  height: 100%;
   color: #e6eef6;
   line-height: 1.6;
+  background: linear-gradient(180deg, #071428 0%, #041022 100%);
   -webkit-font-smoothing: antialiased;
   scroll-behavior: smooth;
 }
 
-/* ------------------------------
-   LAYOUT GENERAL
---------------------------------*/
 .container {
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 0 var(--container-padding);
 }
 
-/* ------------------------------
-   HEADER
---------------------------------*/
+/* HEADER */
 .site-header {
   position: sticky;
   top: 0;
   z-index: 20;
+  padding: 1rem 0;
   backdrop-filter: blur(10px);
   background: rgba(6, 12, 20, 0.6);
   border-bottom: 1px solid rgba(255,255,255,0.05);
-  padding: 1rem 0; 
 }
 
 .header-inner {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
 }
 
 .nav a {
-  color: var(--muted);
-  text-decoration: none;
   margin: 0 1rem;
   font-size: 0.95rem;
-  transition: 0.2s ease;
+  color: var(--muted);
+  text-decoration: none;
+  transition: 0.2s;
 }
 
 .nav a:hover {
@@ -69,19 +60,17 @@ body {
   text-shadow: 0 0 8px rgba(99, 102, 241, 0.4);
 }
 
-/* ------------------------------
-   PERFIL INICIAL
---------------------------------*/
+/* PERFIL */
 .perfil-card {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 1.5rem;
-  background: var(--glass);
   padding: 1.2rem 1.8rem;
-  border-radius: var(--radius);
-  border: 1px solid rgba(255,255,255,0.05);
   margin-bottom: 1rem;
-  flex-wrap: wrap;
+  border-radius: var(--radius);
+  background: var(--glass);
+  border: 1px solid rgba(255,255,255,0.05);
 }
 
 .perfil-img {
@@ -104,7 +93,7 @@ body {
 .perfil-info a {
   color: var(--accent);
   text-decoration: none;
-  transition: 0.2s ease;
+  transition: 0.2s;
 }
 
 .perfil-info a:hover {
@@ -115,26 +104,26 @@ body {
 .perfil-buttons {
   margin-top: 0.8rem;
   display: flex;
-  gap: 0.8rem;
   flex-wrap: wrap;
+  gap: 0.8rem;
 }
 
-/* ------------------------------
-   BOTONES 
---------------------------------*/
+/* BOTONES */
 .btn, .btn-outline {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-weight: 600;
-  text-decoration: none;
-  cursor: pointer;
-  border-radius: 12px;
-  padding: 0.6rem 1.2rem;
+  padding: 0.55rem 1.1rem;
   font-size: 0.95rem;
-  transition: all 0.3s ease;
-  overflow: hidden;
+  font-weight: 600;
+  border-radius: 12px;
+  cursor: pointer;
   border: none;
+  transition: 0.3s ease;
+  text-decoration: none; 
+}
+
+.btn {
   background: var(--accent);
   color: #fff;
   box-shadow: 0 4px 15px rgba(99, 102, 241, 0.25);
@@ -142,40 +131,30 @@ body {
 
 .btn:hover {
   background: var(--accent-hover);
+  transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(99, 102, 241, 0.35);
-  transform: translateY(-2px);
 }
 
-.perfil-buttons .btn-outline {
+.btn-outline {
   background: rgba(255,255,255,0.05);
+  color: var(--accent);
   border: 2px solid var(--accent);
-  color: var(--accent); 
-  box-shadow: inset 0 0 0 rgba(0,0,0,0);
-  transition: all 0.3s ease;
 }
 
-.perfil-buttons .btn-outline:hover {
-  background: var(--accent); 
-  color: #fff;               
-  box-shadow: 0 4px 12px rgba(99,102,241,0.3);
+.btn-outline:hover {
+  background: var(--accent);
+  color: #fff;
   transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(99,102,241,0.3);
 }
 
-.perfil-buttons .btn,
-.perfil-buttons .btn-outline {
-  font-size: 0.95rem;
-  padding: 0.55rem 1.1rem;
-}
-
-/* ------------------------------
-   HERO (SOBRE MI)
---------------------------------*/
+/* HERO */
 .hero {
   display: flex;
-  gap: 2rem;
-  padding: 1rem 0 2rem 0;
-  margin-top: -1rem;
   align-items: center;
+  gap: 2rem;
+  padding: 1rem 0 2rem;
+  margin-top: -1rem;
 }
 
 .hero-content h2 {
@@ -193,21 +172,17 @@ body {
   gap: .7rem;
 }
 
-/* ------------------------------
-   SECCIONES
---------------------------------*/
+/* SECCIONES */
 .section {
-  padding: 1.8rem 0 2.4rem 0;
+  padding: 1.8rem 0 2.4rem;
 }
 
 .section h2 {
-  font-size: 1.5rem;
   margin-bottom: .8rem;
+  font-size: 1.5rem;
 }
 
-/* ------------------------------
-   SKILLS GRID
---------------------------------*/
+/* SKILLS */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -215,27 +190,16 @@ body {
 }
 
 .skill-card {
-  background: var(--glass);
   padding: 1rem;
   border-radius: var(--radius);
+  background: var(--glass);
   border: 1px solid rgba(255,255,255,0.05);
-  transition: 0.25s ease;
+  transition: 0.25s;
 }
 
 .skill-card:hover {
   background: rgba(255,255,255,0.06);
   transform: translateY(-3px);
-}
-
-.skill-category {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.skill-category h3 {
-  font-size: 1.05rem;
-  margin: 0;
 }
 
 .skill-items {
@@ -249,10 +213,10 @@ body {
   display: flex;
   align-items: center;
   gap: .55rem;
-  background: rgba(255,255,255,0.06);
   padding: .45rem .55rem;
-  border-radius: 10px;
   min-width: 140px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.06);
   transition: 0.2s;
 }
 
@@ -266,9 +230,7 @@ body {
   object-fit: contain;
 }
 
-/* ------------------------------
-   PROJECTS
---------------------------------*/
+/* PROJECTS */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
@@ -276,11 +238,11 @@ body {
 }
 
 .project-card {
-  background: var(--glass);
   padding: 1rem;
   border-radius: var(--radius);
+  background: var(--glass);
   border: 1px solid rgba(255,255,255,0.05);
-  transition: 0.25s ease;
+  transition: 0.25s;
 }
 
 .project-card:hover {
@@ -288,107 +250,81 @@ body {
   transform: translateY(-4px);
 }
 
-.project-card h4 {
-  margin: .2rem 0 .5rem 0;
-}
-
 .project-meta {
   font-size: 0.9rem;
   color: var(--muted);
 }
 
-/* ------------------------------
-   CONTACT FORM
---------------------------------*/
+/* FORMULARIO CONTACTO */
 .contact-form {
   max-width: 700px;
-  background: var(--glass);
   padding: 1.1rem;
   border-radius: var(--radius);
+  background: var(--glass);
   border: 1px solid rgba(255,255,255,0.05);
 }
 
 .contact-form label {
-  display: block;
   margin-bottom: .7rem;
+  display: block;
 }
 
 .contact-form input,
 .contact-form textarea {
   width: 100%;
+  margin-top: .3rem;
   padding: .65rem;
   border-radius: 8px;
   border: 1px solid rgba(255,255,255,0.08);
   background: rgba(255,255,255,0.03);
   color: inherit;
-  margin-top: .3rem;
   transition: 0.25s;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
   border-color: var(--accent);
-  outline: none;
   background: rgba(255,255,255,0.08);
+  outline: none;
 }
 
 .form-actions {
+  margin-top: .7rem;
   display: flex;
   gap: .7rem;
-  margin-top: .7rem;
 }
 
-/* ------------------------------
-   FOOTER
---------------------------------*/
+/* FOOTER */
 .site-footer {
-  border-top: 1px solid rgba(255,255,255,0.05);
-  padding: 1rem 0;
   margin-top: 2.5rem;
+  padding: 1rem 0;
   text-align: center;
-}
-
-.site-footer .container {
-  display: block;
+  border-top: 1px solid rgba(255,255,255,0.05);
 }
 
 .footer-links {
   display: none;
 }
 
-/* ------------------------------
-   TEXT MUTED
---------------------------------*/
-.muted {
-  color: var(--muted);
-}
-
-.feedback {
-  margin-top: .6rem;
-  color: #7cf57c;
-}
-
-/* ------------------------------
-   BOTÓN VOLVER ARRIBA
---------------------------------*/
+/* BOTÓN ARRIBA */
 #top-button {
   position: fixed;
   bottom: 25px;
   right: 25px;
-  background: var(--accent);
-  color: #fff;
-  border: none;
-  border-radius: 50%;
   width: 50px;
   height: 50px;
-  cursor: pointer;
   font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  border: none;
+  border-radius: 50%;
+  background: var(--accent);
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.3s ease, transform 0.2s ease;
+  transition: 0.3s, transform 0.2s;
   box-shadow: 0 5px 20px rgba(99,102,241,0.4);
   z-index: 50;
 }
@@ -404,25 +340,21 @@ body {
   box-shadow: 0 8px 25px rgba(99,102,241,0.5);
 }
 
-/* ------------------------------
-   RESPONSIVE
---------------------------------*/
+/* RESPONSIVE */
 @media (max-width: 720px) {
   .container {
-    padding: 0 1rem; 
+    padding: 0 1rem;
   }
 
   .header-inner {
     flex-direction: column;
-    align-items: center;
     gap: 1rem;
   }
 
   .nav {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
+    gap: .5rem;
   }
 
   .nav a {
@@ -432,22 +364,17 @@ body {
 
   .perfil-card {
     flex-direction: column;
-    align-items: center;
     text-align: center;
-    gap: 1rem;
-    padding: 1rem 1rem; 
+    padding: 1rem;
   }
 
   .perfil-buttons {
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 0.8rem;
     width: 100%;
   }
 
   .hero {
     flex-direction: column;
-    align-items: center;
     text-align: center;
     padding: 1rem;
   }
@@ -455,25 +382,14 @@ body {
   .hero-cta {
     flex-direction: column;
     width: 100%;
-    gap: 0.7rem;
   }
 
   .hero-cta .btn,
   .hero-cta .btn-outline {
     width: 100%;
-    justify-content: center;
   }
 
   .section {
-    padding: 1.5rem 1rem; 
-  }
-
-  .contact-form {
-    padding: 1rem;
-  }
-
-  .skills-grid,
-  .projects-grid {
-    gap: 1rem;
+    padding: 1.5rem 1rem;
   }
 }
